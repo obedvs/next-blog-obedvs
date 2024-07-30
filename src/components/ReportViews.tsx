@@ -24,6 +24,6 @@ export default function ReportViews({slug, title, category}: {slug: string, titl
     }
 
     postData()
-  }, [])
+  }, [ slug, title, category ])
   return (<></>)
 }

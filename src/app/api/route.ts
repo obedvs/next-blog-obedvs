@@ -17,7 +17,7 @@ export async function GET() {
     return Response.json(data)
   } catch (error) {
     console.error("Error getting popular posts", error)
-    return new Error("Failed to fetching popular posts")
+    throw new Error("Failed to fetching popular posts")
   }
 }
 
