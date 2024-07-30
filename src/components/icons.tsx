@@ -1,4 +1,4 @@
-import { Command, Rss, ArrowRight, type Icon as LucidIcon, Twitter, Github, Instagram, Linkedin } from "lucide-react";
+import { Command, Rss, ArrowRight, type Icon as LucidIcon, Twitter, Github, Instagram, Linkedin, BriefcaseBusiness } from "lucide-react";
 
 export type Icon = typeof LucidIcon;
 
@@ -9,5 +9,6 @@ export const Icons = {
   twitter: Twitter,
   github: Github,
   instagram: Instagram,
-  linkedin: Linkedin
+  linkedin: Linkedin,
+  portfolio: BriefcaseBusiness
 }

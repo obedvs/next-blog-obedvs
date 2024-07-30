@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="grid place-items-center h-[90dvh]">
+    <section className="grid place-items-center h-[60dvh]">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">404 - Page Not Found</h1>
       <p className="mb-4">This page you are looking for does not exist.</p>
-      <Link href="/">Go Home.</Link>
+      <Link href="/">Go Home</Link>
     </section>
   );
 }
