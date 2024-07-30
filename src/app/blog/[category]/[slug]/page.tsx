@@ -13,7 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ({
+export default function Page({
   params,
 }: {
   params: { category: string; slug: string };
