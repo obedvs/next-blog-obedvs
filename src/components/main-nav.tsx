@@ -37,7 +37,7 @@ export function MainNav({ className }: { className?: string }) {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Posts</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Publicaciones</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {POSTS.map((post) => (
@@ -53,9 +53,9 @@ export function MainNav({ className }: { className?: string }) {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
+            <Link href="/sobre-mi" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                About
+                Sobre Mi
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

@@ -5,12 +5,12 @@ import { CustomMDX } from "@/components/mdx";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "This page explains the Privacy Policy of the site.",
+  title: "Política de Privacidad",
+  description: "Esta página explica la Política de Privacidad del sitio.",
 };
 
 export default function Page() {
-  let post = getPrivacyPolicy().find((post) => post.slug === "privacy-policy");
+  let post = getPrivacyPolicy().find((post) => post.slug === "politica-de-privacidad");
 
   return (
     <Container>

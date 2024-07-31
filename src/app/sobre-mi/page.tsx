@@ -4,8 +4,8 @@ import { MainNav } from "@/components/main-nav";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Me",
-  description: "Information about me",
+  title: "Sobre Mi",
+  description: "Información sobre mi",
 };
 
 export default async function AboutPage() {
@@ -16,7 +16,7 @@ export default async function AboutPage() {
           <MainNav />
           <Header>
             <h1 className="title font-semibold text-2xl tracking-tighter mt-4 capitalize">
-              About Me
+              Sobre Mi
             </h1>
           </Header>
         </Container>
@@ -25,7 +25,7 @@ export default async function AboutPage() {
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
           <div className="min-w-48 max-w-48 flex flex-col gap-2">
             <p className="text-muted-foreground text-center break-words">
-              Software Engineer
+              Ingeniero en Software
             </p>
           </div>
           <p className="text-muted-foreground text-lg py-4">

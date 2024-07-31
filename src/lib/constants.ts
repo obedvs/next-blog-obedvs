@@ -2,8 +2,7 @@ export const POSTS: { title: string; href: string; description: string }[] = [
   {
     title: "React",
     href: "/blog/react",
-    description:
-      "Learn how to build modern web applications using React, a JavaScript library for building user interfaces.",
+    description: "Aprende a construir aplicaciones web modernas utilizando React, una biblioteca de JavaScript para construir interfaces de usuario.",
   },
   // {
   //   title: "JavaScript",
@@ -13,7 +12,7 @@ export const POSTS: { title: string; href: string; description: string }[] = [
   {
     title: "CSS",
     href: "/blog/css",
-    description: "Learn how to style your web applications using CSS",
+    description: "Aprende a darle estilo a tus aplicaciones web utilizando CSS",
   },
   // {
   //   title: "Performance",

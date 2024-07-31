@@ -5,13 +5,13 @@ import { CustomMDX } from "@/components/mdx";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms Of Services",
-  description: "This page explains the terms of use of the site.",
+  title: "Términos de Servicio",
+  description: "Esta página explica los términos de uso del sitio.",
 };
 
 export default function Page() {
   let post = getTermsOfServices().find(
-    (post) => post.slug === "terms-of-services"
+    (post) => post.slug === "terminos-de-servicio"
   );
 
   return (

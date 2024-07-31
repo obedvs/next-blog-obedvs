@@ -10,7 +10,7 @@ import { PopularPostsSkeleton } from "../skeleton/popular_posts_skeleton";
 export default function PopularPosts() {
   const { data, error, isLoading } = useSWR(fetchUrl, fetcher);
 
-  if (error) return <div>Failed to load</div>;
+  if (error) return <div>Falló al cargar.</div>;
 
   if (isLoading) return <PopularPostsSkeleton />;
 

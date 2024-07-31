@@ -1,0 +1,111 @@
+---
+title: "Utilización Correcta de Hooks en la Última Versión de ReactJS y Next.js"
+publishedAt: "2024-07-31"
+summary: "Aprende cómo utilizar los hooks de manera efectiva en la última versión de ReactJS y cómo integrarlos en tus proyectos de Next.js."
+category: "react"
+---
+
+# Utilización Correcta de Hooks en la Última Versión de ReactJS y Next.js
+
+Los hooks en React han revolucionado la forma en que manejamos el estado y otros aspectos del ciclo de vida de los componentes. En este artículo, exploraremos cómo utilizar los hooks correctamente en la última versión de ReactJS y cómo integrarlos eficazmente en un proyecto de Next.js.
+
+## ¿Qué son los Hooks?
+
+Los hooks son funciones que te permiten "engancharte" a las características de estado y ciclo de vida de React desde componentes funcionales. Los hooks más comunes son `useState` y `useEffect`.
+
+### `useState`
+
+`useState` es un hook que te permite agregar estado local a un componente funcional. Aquí hay un ejemplo simple:
+
+```jsx
+import { useState } from 'react';
+
+function Contador() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Has hecho clic {count} veces</p>
+      <button onClick={() => setCount(count + 1)}>Haz clic aquí</button>
+    </div>
+  );
+}
+
+export default Contador;
+```
+
+### `useEffect`
+
+`useEffect` es un hook que te permite realizar efectos secundarios en componentes funcionales. Es equivalente a los métodos de ciclo de vida `componentDidMount`, `componentDidUpdate` y `componentWillUnmount` combinados.
+
+```jsx
+import { useState, useEffect } from 'react';
+
+function Reloj() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timerID = setInterval(() => setTime(new Date()), 1000);
+
+    return () => clearInterval(timerID);
+  }, []);
+
+  return <div>{time.toLocaleTimeString()}</div>;
+}
+
+export default Reloj;
+```
+
+## Hooks en Next.js
+Next.js, como un framework de React, soporta completamente los hooks. Además, Next.js proporciona su propio conjunto de hooks para manejar el enrutamiento y la carga de datos.
+
+### `useRouter`
+
+`useRouter` es un hook que proporciona acceso al enrutador de Next.js. Aquí tienes un ejemplo de cómo usarlo:
+
+```jsx
+import { useRouter } from 'next/router';
+
+function Navegacion() {
+  const router = useRouter();
+
+  return (
+    <div>
+      <button onClick={() => router.push('/about')}>Ir a About</button>
+    </div>
+  );
+}
+
+export default Navegacion;
+```
+
+### `useSWR`
+
+**SWR** es una biblioteca para la recuperación de datos en React, creada por los desarrolladores de Next.js. Es altamente recomendable para la gestión de datos en aplicaciones Next.js.
+
+```jsx
+import useSWR from 'swr';
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+function Perfil() {
+  const { data, error } = useSWR('/api/user', fetcher);
+
+  if (error) return <div>Error al cargar</div>;
+  if (!data) return <div>Cargando...</div>;
+
+  return <div>Hola {data.name}</div>;
+}
+
+export default Perfil;
+```
+
+## Mejores Prácticas con Hooks
+
+1. **Mantén el código limpio y legible:** Divide los hooks en funciones más pequeñas si empiezan a ser demasiado complejos.
+2. **Usa hooks personalizados:** Si tienes lógica de estado reutilizable, considera crear tus propios hooks personalizados.
+3. **Orden de los hooks:** Asegúrate de llamar a los hooks en el mismo orden en cada renderizado. No los llames condicionalmente.
+
+## Conclusión
+
+Los hooks han cambiado drásticamente la forma en que construimos componentes en React. Usados correctamente, pueden hacer que tu código sea más limpio y fácil de entender. Integrar estos hooks en un proyecto de Next.js es simple y puede mejorar significativamente tu flujo de trabajo.

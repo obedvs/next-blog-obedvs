@@ -13,7 +13,7 @@ type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   name: 'Obed.vs Blog',
-  description: 'An Open source Technical Blog platform with Next.js 14, shadcn/iu, Prisma ORM and Markdown support.',
+  description: 'Una plataforma de Blog Técnico de Código Abierto con Next.js 14, shadcn/iu, Prisma ORM y soporte Markdown.',
   url: 'https://obedvs-blog.vercel.app/',
   ogImage: 'https://obedvs-blog.vercel.app/og',
   links: {

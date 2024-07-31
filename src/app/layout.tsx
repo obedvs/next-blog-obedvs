@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   creator: 'Obed Vega',
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_MX",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -58,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"

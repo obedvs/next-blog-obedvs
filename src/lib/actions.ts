@@ -7,7 +7,7 @@ import { z } from 'zod'
 
 const FormSchema = z.object({
   id: z.number(),
-  email: z.string().min(1, { message: 'Email is required' }),
+  email: z.string().min(1, { message: 'Email es Requerido' }),
   isSubscribed: z.boolean()
 });
 
@@ -26,7 +26,7 @@ export async function createSubscriber(prevState: State, formData: FormData) {
   });
 
   if (!validatedField.success) {
-    return { errors: validatedField.error.flatten().fieldErrors, message: "Email is Required" };
+    return { errors: validatedField.error.flatten().fieldErrors, message: "Email es Requerido" };
   }
 
   const { email } = validatedField.data;
@@ -38,15 +38,15 @@ export async function createSubscriber(prevState: State, formData: FormData) {
       }
     });
     revalidatePath('/')
-    return { message: "Thank you for Subscribing!" };
+    return { message: "¡Gracias por Suscribirte!" };
   } catch (error) {
     if (error) {
       if (error instanceof Prisma.PrismaClientKnownRequestError) {
         if (error.code === 'P2002') {
-          return { message: "Email is already subscribed!" };
+          return { message: "¡El Correo electrónico ya está registrado!" };
         }
       }
     }
-    return { message: 'Database Error: Failed to Subscribe' };
+    return { message: 'Error de Base de Datos: Falló al Suscribir.' };
   }
 }

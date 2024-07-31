@@ -21,7 +21,7 @@ export default function Footer() {
               <span className="text-md font-semibold">Obed.vs</span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
-              Stay to Date with the latest news and insights from our blog.
+              Mantente al día con las últimas noticias e información de mí blog.
             </p>
             <div className="flex space-x-4">
               <a
@@ -83,30 +83,30 @@ export default function Footer() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-md font-semibold">Links</h3>
+              <h3 className="text-md font-semibold">Enlaces</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
                     href="mailto:is.paulvega.17102@gmail.com"
                     className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                   >
-                    Contact
+                    Contacto
                   </a>
                 </li>
                 <li>
                   <Link
-                    href="/terms-of-services"
+                    href="/terminos-de-servicio"
                     className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                   >
-                    Terms Of Services
+                    Términos de Servicio
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="/politica-de-privacidad"
                     className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                   >
-                    Privacy Policy
+                    Política de Privacidad
                   </Link>
                 </li>
                 <li>
@@ -123,8 +123,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-md font-semibold">Newletter</h3>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
-              Subscribe to our newsletter to stay up-to-date with the latest
-              news and updates.
+              Suscríbete a el boletín informativo para recibir actualizaciones
+              semanales sobre mis publicaciones.
             </p>
             <form action={dispatch}>
               <div className="flex space-x-2">
@@ -132,12 +132,12 @@ export default function Footer() {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Enter your email"
+                  placeholder="Ingresa tu correo electrónico"
                   className="flex-1"
                   defaultValue=""
                   aria-describedby="email-error"
                 />
-                <Button>Subscribe</Button>
+                <Button>Suscribirse</Button>
               </div>
               <div
                 id="email-error"
@@ -159,7 +159,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-4 text-center text-xs text-gray-500 dark:text-gray-400 dark:border-gray-700">
-          &copy; 2024 Obed.vs. All rights reserved.
+          &copy; 2024 Obed.vs. Todos los derechos reservados.
         </div>
       </div>
     </footer>

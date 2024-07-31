@@ -19,7 +19,7 @@ export default function ReportViews({slug, title, category}: {slug: string, titl
           })
         })
       } catch (error) {
-        console.log("Something is up...", error)
+        console.error("Algo sucedió...", error)
       }
     }
 

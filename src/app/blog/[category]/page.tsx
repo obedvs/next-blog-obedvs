@@ -4,7 +4,6 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import CardCategory from "@/components/CardCategory";
 import Header from "@/components/Header";
-import { describe } from "node:test";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -18,7 +17,7 @@ export function generateMetadata({ params }: { params: { category: string } }) {
   let { category } = params;
   return {
     title: category.toLocaleUpperCase(),
-    description: `All posts in the ${category} category.`,
+    description: `Publicaciones en la categoría ${category}.`,
   };
 }
 

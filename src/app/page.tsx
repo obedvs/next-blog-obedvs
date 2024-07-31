@@ -12,11 +12,11 @@ export default function Home() {
         <LatestPost />
         <aside className="md:h-screen min-w-[300px] max-w-[420px] w-full">
           <div>
-            <h1 className="font-bold mb-4">TOP CATEGORIES</h1>
+            <h1 className="font-bold mb-4">CATEGORÍAS POPULARES</h1>
             <TopCategories />
           </div>
           <div className="mt-10 sticky top-10">
-            <h1 className="font-bold mb-4">POPULAR POSTS</h1>
+            <h1 className="font-bold mb-4">PUBLICACIONES POPULARES</h1>
             <PopularPosts />
           </div>
         </aside>

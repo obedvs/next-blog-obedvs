@@ -30,11 +30,11 @@ export function getBlogPosts() {
 }
 
 export function getTermsOfServices() {
-  return getMDXData(path.join(process.cwd(), 'src', 'app', 'terms-of-services'));
+  return getMDXData(path.join(process.cwd(), 'src', 'app', 'terminos-de-servicio'));
 }
 
 export function getPrivacyPolicy() {
-  return getMDXData(path.join(process.cwd(), 'src', 'app', 'privacy-policy'));
+  return getMDXData(path.join(process.cwd(), 'src', 'app', 'politica-de-privacidad'));
 }
 
 export function formatDate(date: string, includeRelative = true) {
@@ -51,18 +51,18 @@ export function formatDate(date: string, includeRelative = true) {
 
   let formattedDate = '';
   if (yearsAgo > 0) {
-    formattedDate = `${yearsAgo}y ago`;
+    formattedDate = yearsAgo > 1 ? `hace ${yearsAgo} años` : 'hace 1 año';
   } else if (monthsAgo > 0) {
-    formattedDate = `${monthsAgo}mo ago`;
+    formattedDate = monthsAgo > 1 ? `hace ${monthsAgo} meses` : 'hace 1 mes';
   } else if (daysAgo > 0) {
-    formattedDate = `${daysAgo}d ago`;
+    formattedDate = `hace ${daysAgo} días`;
   } else {
-    formattedDate = 'today';
+    formattedDate = 'hoy';
   }
 
-  let fullDate = targetDate.toLocaleString('en-US', {
-    month: 'long',
+  let fullDate = targetDate.toLocaleString('es-MX', {
     day: 'numeric',
+    month: 'long',
     year: 'numeric',
   });
 
