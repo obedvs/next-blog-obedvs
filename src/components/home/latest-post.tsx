@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function LatestPost() {
   let latestPosts = getBlogPosts();
   return (
-    <>
+    <section>
       <h1 className="inline-block font-heading text-4xl tracking-tight lg:text-5xl">Recently Published</h1>
       {latestPosts
         .sort((a, b) => {
@@ -24,6 +24,6 @@ export default function LatestPost() {
             <p className="text-sm text-muted-foreground">{formatDate(post.metadata.publishedAt)}</p>
           </article>
         ))}
-    </>
+    </section>
   );
 }

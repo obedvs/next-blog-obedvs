@@ -24,12 +24,12 @@ export function MainNav({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex flex-col items-start justify-start md:flex-row md:items-center md:justify-between pt-10 z-50",
+        "flex flex-col justify-start md:flex-row items-center md:justify-between pt-10 z-50 gap-y-2",
         className
       )}
     >
       <Link href={"/"}>
-        <div className="flex items-center justify-between w-28">
+        <div className="flex items-center space-x-2">
           <Icons.logo className="size-6" />
           <p className="text-md font-semibold">Obed.vs</p>
         </div>

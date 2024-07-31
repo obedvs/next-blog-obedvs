@@ -19,8 +19,8 @@ export default function PopularPosts() {
       {data?.map((post: {category: string, title: string, slug: string}) => (
         <Link href={`/blog/${post.category}/${post.slug}`} key={post.title}>
           <li key={post.title} className="flex items-center gap-2 cursor-pointer py-2 group">
-            <Icons.arrowRight className="size-6 group-hover:translate-x-1 transition-transform" />
-            <p>{post.title}</p>
+            <Icons.arrowRight className="size-6 min-w-6 group-hover:translate-x-1 transition-transform" />
+            <p className="text-pretty">{post.title}</p>
           </li>
         </Link>
       ))}

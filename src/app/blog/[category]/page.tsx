@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { category: string } }) {
       </Container>
     </Header>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] grid-rows-[repeat(auto-fill,minmax(260px,1fr))] gap-4 mt-10 px-2 md:px-0">
           {posts
             .sort((a, b) => {
               if (

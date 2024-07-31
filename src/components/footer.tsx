@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 py-8 dark:bg-gray-800 mt-10">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Icons.logo className="size-6" />
@@ -66,57 +66,59 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-md font-semibold">Blog</h3>
-            <ul className="space-y-2 text-sm">
-              {POSTS.map((post) => (
-                <li key={post.title}>
-                  <Link
-                    href={post.href}
+          <div className="grid grid-cols-2">
+            <div className="space-y-4">
+              <h3 className="text-md font-semibold">Blog</h3>
+              <ul className="space-y-2 text-sm">
+                {POSTS.map((post) => (
+                  <li key={post.title}>
+                    <Link
+                      href={post.href}
+                      className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                    >
+                      {post.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-md font-semibold">Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="mailto:is.paulvega.17102@gmail.com"
                     className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                   >
-                    {post.title}
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    href="/terms-of-services"
+                    className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  >
+                    Terms Of Services
                   </Link>
                 </li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-md font-semibold">Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="mailto:is.paulvega.17102@gmail.com"
-                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/terms-of-services"
-                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                >
-                  Terms Of Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/sitemap.xml"
-                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                >
-                  Sitemap
-                </Link>
-              </li>
-            </ul>
+                <li>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sitemap.xml"
+                    className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  >
+                    Sitemap
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="space-y-4">
             <h3 className="text-md font-semibold">Newletter</h3>
