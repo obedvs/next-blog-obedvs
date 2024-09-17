@@ -1,7 +1,7 @@
 import { POSTS } from "@/lib/constants";
 import { getBlogPosts } from "./blog/utils";
 
-export const baseUrl = "https://obedvs-blog.vercel.app"
+export const baseUrl = "https://blog.obedvs.dev";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({

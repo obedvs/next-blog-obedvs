@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Obed Vega",
-      url: "https://obedvega.vercel.app/",
+      url: "https://www.obedvs.dev/",
     },
   ],
   creator: 'Obed Vega',

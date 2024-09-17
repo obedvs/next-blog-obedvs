@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Icons.logo className="size-6" />
-              <span className="text-md font-semibold">Obed.vs</span>
+              <span className="text-md font-semibold">obedvs</span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               Mantente al día con las últimas noticias e información de mí blog.
@@ -57,10 +57,10 @@ export default function Footer() {
                 <Icons.linkedin className="size-6 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" />
               </a>
               <a
-                href="https://obedvega.vercel.app"
+                href="https://www.obedvs.dev/"
                 target="_blank"
-                // rel="noopener noreferrer"
-                aria-label="personal portfolio"
+                rel="noopener noreferrer"
+                aria-label="portafolio"
               >
                 <Icons.portfolio className="size-6 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" />
               </a>
@@ -159,7 +159,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-4 text-center text-xs text-gray-500 dark:text-gray-400 dark:border-gray-700">
-          &copy; 2024 Obed.vs. Todos los derechos reservados.
+          &copy; 2024 obedvs. Todos los derechos reservados.
         </div>
       </div>
     </footer>

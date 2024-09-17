@@ -9,11 +9,11 @@ export const POSTS: { title: string; href: string; description: string }[] = [
   //   href: "/blog/javascript",
   //   description: "Learn what are new in the JavaScript world",
   // },
-  {
-    title: "CSS",
-    href: "/blog/css",
-    description: "Aprende a darle estilo a tus aplicaciones web utilizando CSS",
-  },
+  // {
+  //   title: "CSS",
+  //   href: "/blog/css",
+  //   description: "Aprende a darle estilo a tus aplicaciones web utilizando CSS",
+  // },
   // {
   //   title: "Performance",
   //   href: "/blog/performance",

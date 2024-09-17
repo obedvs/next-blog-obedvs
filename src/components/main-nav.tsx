@@ -31,7 +31,7 @@ export function MainNav({ className }: { className?: string }) {
       <Link href={"/"}>
         <div className="flex items-center space-x-2">
           <Icons.logo className="size-6" />
-          <p className="text-md font-semibold">Obed.vs</p>
+          <span className="text-md font-semibold">obedvs</span>
         </div>
       </Link>
       <NavigationMenu>

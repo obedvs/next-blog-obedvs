@@ -45,7 +45,7 @@ export function GET(request: Request) {
                 fontSize: 20,
               }}
             >
-              obedvs-blog.vercel.app
+              blog.obedvs.dev
             </span>
           </div>
           <div

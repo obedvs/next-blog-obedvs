@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const fetchUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api' : 'https://obedvs-blog.vercel.app/api';
+export const fetchUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api' : 'https://blog.obedvs.dev/api';
 
 type ResponseData = {
   category: string;
